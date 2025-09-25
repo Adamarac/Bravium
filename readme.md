@@ -45,8 +45,8 @@ Este projeto realiza a análise de satisfação de clientes a partir de avaliaç
 - CSV pronto para análise e visualização.
 
 ## Possíveis melhorias
-- **Otimização de parâmetros do modelo**: ajustar `max_depth`, `n_estimators`, `learning_rate` e realizar **tuning via GridSearch** para melhorar acurácia.  
-- **Classificação multilabel**: atualmente cada comentário é atribuído a uma única categoria; permitir múltiplas categorias aumentaria a granularidade da análise.  
-- **Armazenamento vetorial**: salvar vetores FastText ou embeddings em uma base vetorial (ex.: FAISS) para evitar retrain a cada execução e agilizar consultas.  
+- **Otimização de parâmetros do modelo**: ajustar e realizar **tuning** para melhorar acurácia.  
+- **Classificação multilabel**: atualmente cada comentário é atribuído a uma única categoria; permitir múltiplas categorias aumentaria a granularidade e assertividade da análise.  
+- **Armazenamento vetorial**: salvar vetores FastText ou embeddings em uma base vetorial para evitar retrain a cada execução e agilizar consultas.  
 - **Escalabilidade e performance**: processamento paralelo de texto e treinamento do modelo, e otimização do uso de memória para datasets maiores.  
-- **Validação contínua**: implementar pipelines automáticos para reprocessamento incremental de novos comentários e atualização do modelo e lexicon.
+- **Aumentar ou melhorar o dicionário de sinônimos**: expandir o lexicon atual ou adotar abordagens mais avançadas (ex.: embeddings contextualizados) para melhorar a precisão da classificação semântica.
