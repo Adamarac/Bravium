@@ -16,7 +16,7 @@ Este projeto realiza a análise de satisfação de clientes a partir de avaliaç
 - **`target_5`**: inconsistência entre nota e atraso de entrega.
 - **`target_6`**: qualidade do comentário baseada no tamanho do texto.
 - **`final_score`**: score ponderado combinando os targets.
-- **`categorical_score`**: binarização do score final (0 = negativo, 1 = positivo).
+- **`categorical_score`**: binarização do score final (0 = negativo, 1 = positivo). Se o score for menor que 0 negativo e se for maior positivo.
 
 ### 3. Treinamento de modelo de classificação
 - Modelo: **XGBoost Classifier**.
